@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: aliceblue;
+}
+
+div#main {
+    display:block;
+    text-align: center;
+    margin:20px;
+    height: 300px;
+}
+
+
+
+div#sections {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* div.section {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    
+} */

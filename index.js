@@ -1,20 +1,22 @@
-// const foo = document.getElementsByClassName('section');
+const buttonHoverEvent = () => {
+    const btn = document.querySelectorAll('button')
 
-// function func(item) {
-//     item.addEventListener('mouseover',() => item.style.fontSize = '50px')
-    
-// }
+    btn.forEach(element => element.addEventListener('mouseover', (e) => 
+    e.target.style.background = 'gray'
+    ))
 
-// func()
+    btn.forEach(element => element.addEventListener('mouseover', (e) => 
+    e.target.style.color = 'white'
+    ))
 
-// function fn() {
-//     foo.forEach(func(foo))
-// }
+    btn.forEach(element => element.addEventListener('mouseout', (e) => 
+    e.target.style.background = 'white'
+    ))
 
-// fn()
+    btn.forEach(element => element.addEventListener('mouseout', (e) => 
+    e.target.style.color = 'black'
+    ))
+}
+buttonHoverEvent()
 
-// // function fn() {
-// //     foo.addEventListener('mouseout', () => foo.style.fontSize= '45px')
-// // }
 
-// // fn() 

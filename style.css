@@ -14,7 +14,14 @@ div#main {
     height: 300px;
 }
 
+h1 {
+    font-size: 100px;
 
+}
+
+p {
+    font-size: 25px;
+}
 
 div#sections {
     display: flex;
@@ -23,9 +30,10 @@ div#sections {
     padding: 5px;
 }
 
-/* div.section {
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-    
-} */
+button {
+    font-size: 20px;
+    background-color: #eee;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+}

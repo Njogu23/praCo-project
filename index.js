@@ -8,4 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	
    })
 
+const response = fetch('https://exercisedb.p.rapidapi.com/exercises', {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
+		'X-RapidAPI-Key': 'd595c4331bmsh78067501c0d5056p1a9a6ajsnc6dd3a85e9a6',
+	}
+}).then(data => data.json())
+
+
 })

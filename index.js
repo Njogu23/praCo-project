@@ -14,17 +14,22 @@ const response = fetch('https://exercisedb.p.rapidapi.com/exercises', {
 		'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
 		'X-RapidAPI-Key': 'd595c4331bmsh78067501c0d5056p1a9a6ajsnc6dd3a85e9a6',
 	}
-}).then(data => data.json())
+}).then(res => res.json())
 
 
 
 const searchItems = () => {
 	const parentDiv = document.createElement('div')
-	const gifUrl = document.createElement('img')
+	const gifURL = document.createElement('img')
 	const workoutName = document.createElement('p')
 
-	parentDiv.appendChild(gifUrl)
-	parentDiv.appendChild(workoutName)
+	response.then(data => data.forEach(element => 
+		gifURL.src = element.gifUrl))
+	response.then(data => data.forEach(element => 
+		workoutName.textContent = `workout : ${element.name}`))
+
+	parentDiv.appendChild(gifURL)
+	parentDiv.appendChild(workoutName)	
 }
 searchItems()
 

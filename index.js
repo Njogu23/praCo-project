@@ -1,22 +1,11 @@
-const buttonHoverEvent = () => {
-    const btn = document.querySelectorAll('button')
-
-    btn.forEach(element => element.addEventListener('mouseover', (e) => 
-    e.target.style.background = 'gray'
-    ))
-
-    btn.forEach(element => element.addEventListener('mouseover', (e) => 
-    e.target.style.color = 'white'
-    ))
-
-    btn.forEach(element => element.addEventListener('mouseout', (e) => 
-    e.target.style.background = 'white'
-    ))
-
-    btn.forEach(element => element.addEventListener('mouseout', (e) => 
-    e.target.style.color = 'black'
-    ))
-}
-buttonHoverEvent()
+const searchInput = document.querySelector('#text');
+const searchBtn = document.getElementById('search');
 
 
+document.addEventListener("DOMContentLoaded", () => {
+	document.querySelector('form').addEventListener('submit', (e) => {
+	 e.preventDefault();
+	
+   })
+
+})

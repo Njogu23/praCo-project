@@ -17,4 +17,15 @@ const response = fetch('https://exercisedb.p.rapidapi.com/exercises', {
 }).then(data => data.json())
 
 
+
+const searchItems = () => {
+	const parentDiv = document.createElement('div')
+	const gifUrl = document.createElement('img')
+	const workoutName = document.createElement('p')
+
+	parentDiv.appendChild(gifUrl)
+	parentDiv.appendChild(workoutName)
+}
+searchItems()
+
 })

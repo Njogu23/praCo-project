@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				response.then(data => data.filter(el => {
 					if(el.bodyPart === target.textContent) {
 						const div = document.createElement('div')
+
 						const gifURL = document.createElement('img')
 			            const workoutName = document.createElement('p')
 						gifURL.src = el.gifUrl
@@ -56,6 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
 						div.appendChild(workoutName)
 						rootDiv.appendChild(div)
 
+						div.addEventListener('click', () => div.remove())
+
+						return rootDiv
 					}
 				}))
 			})

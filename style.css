@@ -3,15 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-    background: black;
-    color: white;
+    background: gold;
+    color: #171515;
+
+}
+
+body#body {
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
 }
 
 div#main {
     display:block;
     text-align: center;
     margin:20px;
-    height: 300px;
+    height: 100px;
 }
 
 h1 {

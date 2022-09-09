@@ -20,7 +20,7 @@ const rootDiv = document.getElementById('root')
 
 
 document.addEventListener("DOMContentLoaded", () => {
-	const createDivs = () => {
+	const handleApi = () => {
 		
 		bodyTargets.then(data => data.forEach(items => {
 			const target = document.createElement('a')
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		
 	
 	}
-	createDivs()
+	handleApi()
 	
 }
 )

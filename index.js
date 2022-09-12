@@ -20,7 +20,7 @@ const rootDiv = document.getElementById('root')
 
 
 document.addEventListener("DOMContentLoaded", () => {
-	const handleApi = () => {
+	const handleApii = () => {
 		
 		bodyTargets.then(data => data.forEach(items => {
 			const target = document.createElement('a')

@@ -42,3 +42,10 @@ body#body {
     font-size: 25px;
 }
 
+#delete {
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+}

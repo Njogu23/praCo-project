@@ -17,6 +17,7 @@ const bodyTargets = fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPartL
 
 const searchInput = document.querySelector('#text')
 const rootDiv = document.getElementById('root')
+const searchBtn = document.getElementById('search')
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -73,6 +74,38 @@ document.addEventListener("DOMContentLoaded", () => {
 	
 }
 )
+
+document.addEventListener("DOMContentLoaded", () => {
+	document.querySelector('form').addEventListener('submit', (e) => {
+	 e.preventDefault();
+	 searchItems(searchInput.value)
+
+   })
+
+
+const searchItems = (target) => {
+
+	response.then(data => data.filter(element => {
+		if (element.bodyPart === target)
+
+		{const parentDiv = document.createElement('div')
+	    const gifURL = document.createElement('img')
+	    const workoutName = document.createElement('p')
+		gifURL.src = element.gifUrl
+		workoutName.textContent = `workout: ${element.name}`
+
+		parentDiv.appendChild(gifURL)
+	    parentDiv.appendChild(workoutName)
+	    return rootDiv.appendChild(parentDiv)
+	}
+
+
+	}
+	))
+
+	}
+
+})
 
 
 

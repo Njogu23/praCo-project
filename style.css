@@ -45,7 +45,7 @@ body#body {
 #delete {
     font-size: 25px;
     border-radius: 10px;
-    background-color: gray;
+    background-color: green;
     color: white;
     border: none;
 }

@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const searchItems = (target) => {
 
 	response.then(data => data.filter(element => {
-		if (element.bodyPart === target)
+		if (element.bodyPart === target.toLowerCase())
 
 		{const parentDiv = document.createElement('div')
 	    const gifURL = document.createElement('img')

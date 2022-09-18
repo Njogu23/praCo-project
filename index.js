@@ -21,7 +21,7 @@ const searchBtn = document.getElementById('search')
 const deleteBtn = document.getElementById('delete')
 
 
-document.addEventListener("DOMContentLoaded", () => 
+document.addEventListener("DOMContentLoaded", () => {
 	const handleApi = () => {
 		
 		bodyTargets.then(data => data.forEach(items => {

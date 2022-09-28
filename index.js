@@ -105,6 +105,8 @@ const searchItems = (target) => {
 		rootDiv.remove())
 	} 
 		
+		
+	
     }
 	))
 

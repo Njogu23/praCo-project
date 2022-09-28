@@ -103,13 +103,8 @@ const searchItems = (target) => {
 
 		deleteBtn.addEventListener('click', () =>
 		rootDiv.remove())
-	} else if (element.bodyPart[0] !== target.toLowerCase()) {
-		const p = document.createElement('p')
-		p.textContent = 'no match'
-		rootDiv.appendChild(p)
+	} 
 		
-
-	}
     }
 	))
 
